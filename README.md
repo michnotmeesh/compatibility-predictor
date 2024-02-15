@@ -1,17 +1,17 @@
 # compatibility-predictor
 Compatibility Predictor is an application that takes an input: an array of applicants and an array of team members, and produces an output: an object of applicants with their respective compatibility score.
 
-### SPECIFICATIONS
+## SPECIFICATIONS
 - Input and Output must be in JSON
 - Compatibility score for each applicant should fall in a range from [0, 1]
 - Developed in JavaScript
 
-### INSTRUCTIONS
+## INSTRUCTIONS
 #### INPUT
 To change the input, edit the array of team members `team` and/or the array of applicants `applicants`.
 This can be found at the top of the file `const team = [ ... ]` and `const applicants = [ ... ]`
 
-Example `team` input:
+**Example `team` input:**
 ```
 const team =  [
   {
@@ -44,7 +44,7 @@ const team =  [
 ]
 ```
 
-Example `applicants` input:
+**Example `applicants` input:**
 ```
 const applicants = [
   {
@@ -78,7 +78,7 @@ const applicants = [
 #### OUTPUT
 The code will ouput an the final compatibility scores of each applicant to the `console`. The applicant with the score of 1 will be considered the most compatibile with the original team comapred to all other applicants.
 
-Example output:
+**Example output:**
 ```
 {
     “scoredApplicants” : [
@@ -96,7 +96,7 @@ Example output:
 }
 ```
 
-### ASSUMPTIONS
+## ASSUMPTIONS
 This code assumes that every team member and applicant have the same format as the following:
 ```
 {
@@ -111,4 +111,5 @@ This code assumes that every team member and applicant have the same format as t
 ```
 
 It also assumes that all team members and applicants have the same attributes and will be scored based on these attributes equally. No attribute has more weight than the other.
+
 It also assumes that scores for each attribute should fall in the range of [0 to 10], where 0 is the lowest and 10 is the highest possible scores. If you'd like to change the max overall score for each attribute, change the `OVERALL_SCORE` variable.
