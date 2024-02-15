@@ -76,7 +76,7 @@ const applicants = [
 ]
 ```
 #### OUTPUT
-The code will ouput an the final compatibility scores of each applicant to the `console`. The applicant with the score of 1 will be considered the most compatibile with the original team.
+The code will ouput an the final compatibility scores of each applicant to the `console`. The applicant with the score of 1 will be considered the most compatibile with the original team comapred to all other applicants.
 
 Example output:
 ```
@@ -87,10 +87,10 @@ Example output:
             “score” : 0.2
         }, {
             “name” : “Jane”,
-            “score” : 0.4
+            “score” : 0.5
         }, {
             “name” : “Joe”,
-            “score” : 0.9
+            “score” : 1
         }
     ]
 }
