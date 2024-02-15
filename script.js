@@ -103,14 +103,10 @@ console.log("original team avg score", teamAvgScores);
 function teamWithApps() {
   let applicantScores = [];
   for (apps in applicants) {
-    console.log(applicants[apps]);
     let teamWithApp = [].concat(team, applicants[apps]);
 
     const attributScores = calculateTeamAttributeScores(teamWithApp);
     const teamAvgScoresWithApp = calculateTeamAvgAttributeScores(attributScores, teamWithApp);
-
-    // teamAvgScoresWithApp["name"] = applicants[apps]["name"];
-    console.log(teamAvgScoresWithApp);
 
     let appScoreByAttribute = compareScore(teamAvgScores, teamAvgScoresWithApp);
     let final = totalScore(appScoreByAttribute, applicants[apps]["name"]);
@@ -141,6 +137,8 @@ function totalScore(appScoreByAttribute, name) {
 
 const result = teamWithApps();
 
+// If an applicant has a final score greater than 1:
+// Divide everyone's score by the highest applicant's score
 function findHighestScore(result) {
   let findResult = result.map((val) => {
     return val.score;
@@ -154,8 +152,8 @@ result.forEach((app) => {
   app["score"] = app["score"] / highestScore;
 });
 
-// final result
-// applicant with a score of 1 is the best match
+// Final output is printed to the console
+// Applicant with a score of 1 is the best match
 let output = {};
 output["scoredApplicants"] = result;
 console.log("final", output);
