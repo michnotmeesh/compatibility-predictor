@@ -1,5 +1,5 @@
 # compatibility-predictor
-Compatibility Predictor is an application that takes an input: an array of applicants and an array of team members, and produces an output: an array of applicants with their respective compatibility score.
+Compatibility Predictor is an application that takes an input: an array of applicants and an array of team members, and produces an output: an object of applicants with their respective compatibility score.
 
 ### SPECIFICATIONS
 - Input and Output must be in JSON
