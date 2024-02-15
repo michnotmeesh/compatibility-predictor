@@ -7,6 +7,8 @@ Compatibility Predictor is an application that takes an input: an array of appli
 - Developed in JavaScript
 
 ## INSTRUCTIONS
+Completed project code is in `script.js`
+
 #### INPUT
 To change the input, edit the array of team members `team` and/or the array of applicants `applicants`.
 This can be found at the top of the file `const team = [ ... ]` and `const applicants = [ ... ]`
