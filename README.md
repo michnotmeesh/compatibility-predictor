@@ -10,7 +10,7 @@ Compatibility Predictor is an application that takes an input: an array of appli
 To change the input, edit the array of team members `team` and/or the array of applicants `applicants`.
 
 This code assumes that every team member and applicant has the same format as the following:
-`{
+``{
   "name" : "nameString",
   "attributes" : {
     "attribute" : integer,
@@ -18,7 +18,7 @@ This code assumes that every team member and applicant has the same format as th
     .
     .
   }
-}`
+}``
 
 It also assumes that all team members and applicants have the same attributes and will be scored based on these attributes equally.
 
